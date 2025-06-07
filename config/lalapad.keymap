@@ -255,7 +255,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LEFT RIGHT>,
+                <&volume_up_down>,
                 <&inc_dec_kp LS(LESS_THAN) LS(GREATER_THAN)>;
         };
 
