@@ -188,11 +188,11 @@
             sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q         &kp W         &kp E            &kp R        &kp T          &kp Y          &kp U          &kp I            &kp O       &kp P            &kp PAGE_UP
-&kp TAB    &kp A         &kp S         &kp D            &kp F        &kp G          &kp H          &kp J          &kp K            &kp L       &mt2 SEMI MINUS  &kp PAGE_DOWN
-&kp LSHFT  &kp Z         &kp X         &kp C            &kp V        &kp B          &kp N          &kp M          &kp COMMA        &kp PERIOD  &mt2 UP SLASH    &kp RIGHT_SHIFT
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE      &mo 1        &lt 3 LANG2    &lt 4 LANG1    &kp BACKSPACE  &kp RET          &kp LEFT    &kp DOWN         &kp RIGHT
-                         &allow_end    &allow_pagedown  &allow_home  &allow_pageup  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
+&kp ESC    &kp Q         &kp W         &kp E             &kp R           &kp T           &kp Y          &kp U            &kp I              &kp O        &kp P          &kp PAGE_UP
+&kp TAB    &kp A         &mt LCTRL S   &mt LEFT_SHIFT D  &mt LEFT_ALT F  &mt LEFT_WIN G  &mt RGUI H     &mt RIGHT_ALT J  &mt RIGHT_SHIFT K  &mt RCTRL L  &kp MINUS      &kp PAGE_DOWN
+&kp LSHFT  &kp Z         &kp X         &kp C             &kp V           &kp B           &kp N          &kp M            &kp COMMA          &kp PERIOD   &mt2 UP SLASH  &kp RIGHT_SHIFT
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE       &lt 1 ESCAPE    &lt 3 LANG2     &lt 4 LANG1    &lt 1 BACKSPACE  &lt 4 RETURN       &kp LEFT     &kp DOWN       &kp RIGHT
+                         &allow_end    &allow_pagedown   &allow_home     &allow_pageup   &allow_pageup  &allow_home      &allow_pagedown    &allow_end
             >;
         };
 
@@ -201,11 +201,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&trans  &trans       &kp F7  &kp F8  &kp F9  &kp F10   &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
-&trans  &kp LG(TAB)  &kp F4  &kp F5  &kp F6  &kp F11   &kp LA(LEFT)   &kp END          &kp KP_ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6
-&trans  &trans       &kp F1  &kp F2  &kp F3  &kp F12   &kp LA(RIGHT)  &kp KP_MINUS     &kp KP_PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&trans  &trans       &trans  &trans  &trans  &kp CAPS  &trans         &kp DELETE       &trans           &kp NUMBER_0  &kp DOT       &kp EQUAL
-                     &trans  &trans  &trans  &trans    &trans         &trans           &trans           &trans
+&trans  &trans       &kp F7  &kp F8  &kp F9  &kp F10   &kp PAGE_UP    &kp TILDE     &kp KP_SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&trans  &kp LG(TAB)  &kp F4  &kp F5  &kp F6  &kp F11   &kp LA(LEFT)   &kp CARET     &kp KP_ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6
+&trans  &trans       &kp F1  &kp F2  &kp F3  &kp F12   &kp LA(RIGHT)  &kp KP_MINUS  &kp KP_PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&trans  &trans       &trans  &trans  &trans  &kp CAPS  &trans         &kp DELETE    &kp ENTER        &kp NUMBER_0  &kp DOT       &kp EQUAL
+                     &trans  &trans  &trans  &trans    &trans         &trans        &trans           &trans
             >;
         };
 
@@ -236,11 +236,11 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &kp ESCAPE  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp AT_SIGN  &kp GRAVE  &kp TILDE  &kp SEMICOLON  &trans
-&trans  &kp TAB     &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mkp LCLK    &mkp MCLK  &mkp RCLK  &kp COLON      &trans
-&trans  &trans      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp UNDERSCORE    &kp LCTRL          &trans       &trans     &trans     &trans         &trans
-&trans  &trans      &trans           &trans                &trans                 &trans            &trans             &kp DELETE   &trans     &trans     &trans         &trans
-                    &trans           &trans                &trans                 &trans            &trans             &trans       &trans     &trans
+&trans  &kp ESCAPE   &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp AT_SIGN         &kp GRAVE            &kp TILDE  &kp SEMICOLON  &trans
+&trans  &kp TAB      &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mkp LCLK           &mkp MCLK            &mkp RCLK  &kp COLON      &trans
+&trans  &kp LS(TAB)  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp UNDERSCORE    &kp BACKSLASH      &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans     &trans         &trans
+&trans  &trans       &trans           &trans                &trans                 &trans            &trans             &kp DELETE          &trans               &trans     &trans         &trans
+                     &trans           &trans                &trans                 &trans            &trans             &trans              &trans               &trans
             >;
         };
 
